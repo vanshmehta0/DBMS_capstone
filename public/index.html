@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Placement | Dashboard</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><div><p class="eyebrow">CAMPUS • CAREER SERVICES</p><h1>Placement Management</h1><p class="sub">A centralized dashboard for student recruitment records.</p></div><span class="tag">DBMS CAPSTONE</span></header>
+<main>
+<section class="stats">
+<div class="stat"><span>Students</span><strong id="students">—</strong></div>
+<div class="stat"><span>Companies</span><strong id="companies">—</strong></div>
+<div class="stat"><span>Open roles</span><strong id="jobs">—</strong></div>
+<div class="stat"><span>Placed</span><strong id="placed">—</strong></div>
+</section>
+<nav><button class="tab active" data-view="students">Students</button><button class="tab" data-view="companies">Companies</button><button class="tab" data-view="jobs">Job openings</button><button class="tab" data-view="applications">Applications</button><button class="tab" data-view="placements">Placements</button><button class="tab" data-view="reports">Reports</button></nav>
+<section class="panel">
+<div class="panel-head"><div><p class="eyebrow" id="section-kicker">DIRECTORY</p><h2 id="section-title">Students</h2></div><input id="search" placeholder="Search records..." /></div>
+<div id="content"></div>
+</section>
+</main>
+<footer>Student Placement Management System · Built with Node.js + MySQL</footer>
+<script src="app.js"></script>
+</body></html>
